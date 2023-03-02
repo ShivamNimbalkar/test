@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 
-function SongList({ songs, setCurrentSong }) {
+function SongList({ songs, setCurrentSong, setIsPlaying }) {
   function handleSongClick(song) {
     setCurrentSong(song);
+    setIsPlaying(false);
   }
 
   return (
