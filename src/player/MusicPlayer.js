@@ -2,9 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import PlayButton from "./PlayButton";
 import PauseButton from "./PauseButton";
 import SongList from "./SongList";
-// import song1 from 'songs/song1.mp3'
-// import song2 from 'songs/song2.mp3'
-// import song3 from 'songs/song3.mp3'
+
 function MusicPlayer() {
   const [songs, setSongs] = useState([
     { id: 1, title: "Song1", artist: "Artist 1", url: "/songs/song1.mp3" },
@@ -35,9 +33,9 @@ function MusicPlayer() {
           <h2>{currentSong.title}</h2>
           <h3>{currentSong.artist}</h3>
           {isPlaying ? (
-            <PauseButton handlePause={handlePause} />
+            <PauseButton handlePause={handlePause} />//props passed
           ) : (
-            <PlayButton handlePlay={handlePlay} />
+            <PlayButton handlePlay={handlePlay} />//Props passed
           )}
         </div>
       )}
