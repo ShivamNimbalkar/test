@@ -5,7 +5,6 @@ import App from "./App";
 import MusicPlayer from "./player/MusicPlayer";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./componants/Navbar";
-import MusicPlayer from "./player/MusicPlayer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
