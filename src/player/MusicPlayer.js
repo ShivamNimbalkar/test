@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import PlayButton from "./PlayButton";
 import PauseButton from "./PauseButton";
 import SongList from "./SongList";
@@ -26,7 +26,7 @@ function MusicPlayer() {
   return (
     <div>
       <h1>Music Player</h1>
-      <SongList songs={songs} setCurrentSong={setCurrentSong} />
+      <SongList songs={songs} setCurrentSong={setCurrentSong} setIsPlaying={setIsPlaying}/>
       {currentSong && (
         <div>
           <audio src={currentSong.url} ref={audioElement}></audio>
