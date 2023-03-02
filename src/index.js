@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./componants/Navbar";
+import MusicPlayer from "./player/MusicPlayer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -11,6 +12,7 @@ root.render(
     <BrowserRouter>
       <div className="main">
         <Navbar />
+        <MusicPlayer/>
         <App />
       </div>
     </BrowserRouter>
